@@ -1,0 +1,100 @@
+<h1>Form Tags :</h1>
+<b>Form attribute:-</b>
+-action="passing data between one page to another"<u>PHP,JSP,ASP.NET</u><br>
+-method="get/post"<br><br>
+<b>Get:</b><br>
+• Pass your to url.<br>
+• Get method is not secure.<br>
+• Range of get method is 255 characters in url.<br><br>
+<b>Post:</b><br>
+•Pass your data hidden inside a body portion of page.<br>
+•Post method is secure.<br>
+•unlimited range characters are passing using post method.<br><br>
+<b>Note:-</b>Get method is by default method.<br><br>
+<b>=> Sub Element of Form :</b><br>
+<h2>☆ input :</h2>
+attribute:-type,width<br><br>
+~>type:-"text,password,checkbox,radio,button,reset,submit,<br>hidden,file"<br><br>
+-<b>text</b> : is a default attribute of text its used to create a text box inside a page.<br>
+-<b>Password</b> : is used to create a password fileld to secure and hide your data.<br>
+-<b>Checkbox</b> : is used to create multiple choise option.<br>
+-<b>Radio</b> : its used to create single choise option button.<br>
+-<b>Button</b> : its working Javascript, jquery or any scripting Language.<br>
+-<b>Submit</b> : its working with PHP,ASP,JSP Language to pass your data inside a server-side Languages.<br>
+-<b>Reset</b> : its used to clear or reset a form data, thats worked with FORM element.<br><br>
+~>width:-"pixel or percentage"
+<h2>☆ Select :</h2>
+=>Select means a drop down box, multiple items Select using Listbox.<br><br>
+attribute:-<br><br>
+~>multiple : "its used to create multiple choise option box."<br>
+~>selected : "its used to create selected by default fileld."
+<h2>☆ Textarea :</h2>
+=>its used to create multi line textbook.<br><br>
+attribute:-<br><br>
+~>rows=""<br>
+~>cols=""<br>
+
+<h2>Example 1(input)</h2>
+Name : <input><br><br>
+SurName : <input type="text"><br><br>
+Password : <input type="password"><br><br>
+Mobile : <input type=text maxlength="10"><br><br>
+Code : <input type=text value="6800"readonly><br><br>
+Pin : <input type=text value="362002"disabled><br><br>
+
+<h2>Example 2(input)</h2>
+<form action="2.php"method="get">
+Name: <input type=text name="nm"><br><br>
+Password: <input type=password name="pass"><br><br>
+Choose Your Product :<br>
+<input type=checkbox name=pro1 value="apl">Apple <br>
+<input type=checkbox name=pro2 value="Dell">Dell<br>
+<input type=checkbox name=pro3 value="lenovo">Lenovo<br>
+<input type=checkbox name=pro4 value="sony">Sony<br>
+<br>
+Gender: <input type=radio name=gen value=m>Male
+<input type=radio name=gen value=f>Female
+<br><br>
+<input type=hidden value=12345 name=code><br>
+<br>
+Choose Your Profile Picture :<br>
+<input type=file name=pic>
+<br><br>
+<input type=button value="Go"onclick=alert("Welcome to Sign up Form");>
+<input type=submit value="Create Account">
+<input type=reset value="Clear">
+</form><br><br>
+
+<h2>Example 3(select)</h2>
+Choose Your Country :
+<form ="3.php"method="get">
+<select name="country">
+<option value="ind">India</option>
+<option value="pk">Pakistan</option>
+<option value="aus">Australia</option>
+<option value="usa">America</option>
+</select>
+<br><br>
+Choose Your Language :<br>
+<select multiple>
+<option>PHP</option>
+<option>ASP</option>
+<option>JSP</option>
+<option selected>HTML</option>
+</select>
+<br><br>
+<input type=submit>
+</form>
+
+<h2>Example 4(textarea)</h2>
+Name :<br>
+<input type="text">
+<br><br>
+Bio :<br>
+<textarea></textarea>
+<br><br>
+Address :<br>
+<textarea rows="10"></textarea>
+<br><br>
+Enter Product Description :<br>
+<textarea cols="40"rows="5"></textarea>

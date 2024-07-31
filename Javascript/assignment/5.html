@@ -1,0 +1,17 @@
+<script type="text/javascript">
+	function loop()
+	{
+		k=frm.no.value;
+        for(i=1;i<=k;i++)	
+        {
+        	for(j=1;j<=i;j++)
+        	{document.write(j+" ")}
+             document.write("<br>")
+        		
+        }	
+	}
+</script>
+<form name="frm">
+	<input type="text" name="no" value="" placeholder="Enter NO">
+	<button onclick="loop();">GO</button>
+</form>

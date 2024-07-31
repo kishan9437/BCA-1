@@ -1,0 +1,86 @@
+body
+{
+background-color: orange;
+margin: 0px;
+}
+.headbg
+{
+background-image: url("/storage/emulated/0/BCA Web Developer/Web images/images.jpeg");
+background-size: 100% 100%;
+paddind: 20px;
+}
+.title
+{
+color: white;
+text-shadow:-5px -5px 20px white;
+font-size: 2.6em;
+padding: 20px;
+}
+.menu
+{
+color: white;
+font-size: 1.5em;
+text-decoration: none;
+padding: 10px;
+}
+.menu:hover
+{
+color: white;
+font-size: 1.5em;
+text-decoration: underline;
+box-shadow: 1px 2px 5px 10px;
+text-shadow: 2px 2px 5px red;
+}
+.content
+{
+color: black;
+width: 80%;
+margin: 0 auto;
+paddind: 40px;
+font-size:1.3em;
+line-height:23px;
+word-spacing:2px;
+text-align: justify;
+border-radius: 20px 140px 20px 140px;
+box-shadow: 15px 15px 40px 10px white;
+background-color: orange;
+}
+.feed
+{
+background-image: url("/storage/emulated/0/DCIM/Nature/8mqOw4DBBSg.jpeg");
+padding: 30;
+text-align: center;
+}
+.text
+{
+width: 350px;
+height: 50px;
+padding: 10px;
+}
+.texta
+{
+width: 300px;
+height: 150px;
+padding: 20px;
+}
+.btn
+{
+color: white;
+background-color: green;
+font-size: 1.4em;
+padding: 10px;
+}
+.btn:hover
+{
+color: black;
+background-color: silver;
+width: 150px;
+}
+.footer
+{
+padding: 20px;
+color:yellow;
+background-color:black;
+font-size: 1.4em;
+text-shadow:5px 5px 5px red;
+}

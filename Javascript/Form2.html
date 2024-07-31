@@ -1,0 +1,16 @@
+<form name="f">
+	<input type="text" name="n1" placeholder="Enter No1"><br><br>
+	<input type="text" name="n2" placeholder="Enter No2"><br><br>
+	<input type="button" name="SUB" value="Addition" onclick="add();"><br><br>
+	<input type="text" name="Ans" disabled=""><br>
+
+</form>
+<script >
+	function add()
+	{
+		x=parseInt(f.n1.value)
+		y=parseInt(f.n2.value)
+		z=x+y;
+		f.Ans.value=z;
+	}
+</script>

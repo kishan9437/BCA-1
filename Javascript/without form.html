@@ -1,0 +1,23 @@
+<style type="text/css">
+	p{ color:red;padding: 20px; font-weight: bold; font-size: 5em;}
+</style>
+<script >
+	function check()
+	{              
+		p=document.getElementById("pass").value;
+		p2=document.getElementById("pass2").value;
+		if (p==p2) 
+		{   
+			document.getElementById("ans").innerHTML='Bothpass are matched';
+		  
+        }
+		else
+		{
+			document.getElementById("ans").innerHTML='Bothpass are not matched';
+		}
+	}
+</script>
+<input type="text" id="pass" placeholder="password"><br>
+<input type="text" id="pass2" placeholder="varify password"><br>
+<button onclick="check();">click me</button>
+<p id="ans"></p>

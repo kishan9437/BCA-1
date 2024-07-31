@@ -1,0 +1,35 @@
+<script type="text/javascript">
+	function valid()
+	{
+		var email;
+		email=document.getElementById("textEmail").value;
+		var reg=/^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+		if (reg.test(testEmail.value)==false) 
+		{
+			alert('Invalid Email Address->'+email);
+			return false;
+		}
+		return true;
+		
+		n=frm.nm.value;
+		m=frm.mo.value;
+
+		if (n=="") 
+		{
+			alert("pleale Enter Your Name");
+			return false;
+		}
+		else if (m=="")
+		{
+			alert("pleale Enter Your Mobile No");
+			return false;
+		}
+		return true;
+	}
+</script>
+<form name="frm" action="looping.html" onsubmit="return valid();">
+	<input type="text" name="nm" placeholder="Enter Name"><br>
+	<input type="text" name="mo" placeholder="Enter Mobile" pattern="\d{10}"><br>
+	<input type="text" id="textEmail" name=""><br>
+	<input type="submit" name="" value="valid">
+</form>

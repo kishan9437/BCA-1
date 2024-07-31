@@ -1,0 +1,39 @@
+<form name="f">
+	<input type="text" name="n1" placeholder="Enter no1"><br><br>
+	<input type="text" name="n2" placeholder="Enter no2"><br><br>
+	<input type="button" value="addition" onclick="a();"><br><br>
+	<input type="button" value="subtraction" onclick="s();"><br><br>
+	<input type="button" value="multiplication" onclick="m();"><br><br>
+	<input type="button" value="division" onclick="d();"><br><br>
+	<input type="text" name="ans" disabled=""><br><br>
+</form>
+<script>
+	function a()
+	{
+		x=parseInt(f.n1.value);
+		y=parseInt(f.n2.value);
+		z=x+y;
+		f.ans.value=z;
+	}
+	function s()
+	{
+		x=parseInt(f.n1.value);
+		y=parseInt(f.n2.value);
+		z=x-y;
+		f.ans.value=z;
+	}
+	function m()
+	{
+		x=parseInt(f.n1.value);
+		y=parseInt(f.n2.value);
+		z=x*y;
+		f.ans.value=z;
+	}
+	function d()
+	{
+		x=parseInt(f.n1.value);
+		y=parseInt(f.n2.value);
+		z=x/y;
+		f.ans.value=z;
+	}
+</script>
